@@ -31,6 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `vehicles` (
   `id` int(100) NOT NULL,
   `uuid` varchar(100) NOT NULL,
+  `carbly_rooftop_uuid` varchar(100) NOT NULL,
   `vin` varchar(100) DEFAULT NULL,
   `mileage` int(100) DEFAULT NULL,
   `year` int(10) DEFAULT NULL,
