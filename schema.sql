@@ -12,15 +12,12 @@ SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
--- Database: `dealer_dynamics`
+-- Database: `DDAPI`
 --
+DROP DATABASE IF EXISTS DDAPI;
+CREATE DATABASE DDAPI;
+USE DDAPI;
 
 -- --------------------------------------------------------
 
@@ -28,51 +25,29 @@ SET time_zone = "+00:00";
 -- Table structure for table `vehicles`
 --
 
-CREATE TABLE `vehicles` (
+CREATE TABLE `DDAPI_CARBLY` (
   `id` int(100) NOT NULL,
-  `uuid` varchar(100) NOT NULL,
-  `carbly_rooftop_uuid` varchar(100) NOT NULL,
-  `vin` varchar(100) DEFAULT NULL,
-  `mileage` int(100) DEFAULT NULL,
-  `year` int(10) DEFAULT NULL,
-  `make` varchar(100) DEFAULT NULL,
-  `model` varchar(100) DEFAULT NULL,
-  `series` varchar(100) DEFAULT NULL,
-  `style` varchar(100) DEFAULT NULL
+  `CARBLY_UUID` varchar(100) NOT NULL,
+  `CARBLY_ROOFTOP_UUID` varchar(100) NOT NULL,
+  `CARBLY_VIN` varchar(100) DEFAULT NULL,
+  `CARBLY_MILEAGE` int(100) DEFAULT NULL,
+  `CARBLY_YEAR` int(10) DEFAULT NULL,
+  `CARBLY_MAKE` varchar(100) DEFAULT NULL,
+  `CARBLY_MODEL` varchar(100) DEFAULT NULL,
+  `CARBLY_SERIES` varchar(100) DEFAULT NULL,
+  `CARBLY_STYLE` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `vehicles`
---
-
--- INSERT INTO `vehicles` (`id`, `uuid`, `vin`, `mileage`, `year`, `make`, `model`, `series`, `style`) VALUES
--- (1, '232', 'lksfkjdf', 300, 2030, 'blerp', 'boink', 'eeee', 'red'),
--- (2, '1kjsdf83o3j8r3', 'lksfkjdf', 300, 2030, 'blerp', 'boink', 'eeee', 'red'),
--- (3, '1kjsdf83o3j8r3', '32874oij398r38', 200000, 2914, 'Ford', 'Mustang', 'G3', 'red'),
--- (4, '1kjsdf83o3j8r3', '32874oij398r38', 200000, 2914, 'Ford', 'Mustang', 'G3', 'red'),
--- (5, '1kjsdf83o3j8r3', '32874oij398r38', 200000, 2914, 'Ford', 'Mustang', 'G3', 'red');
-
---
--- Indexes for dumped tables
---
 
 --
 -- Indexes for table `vehicles`
 --
-ALTER TABLE `vehicles`
+ALTER TABLE `DDAPI_CARBLY`
   ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
 
 --
 -- AUTO_INCREMENT for table `vehicles`
 --
-ALTER TABLE `vehicles`
+ALTER TABLE `DDAPI_CARBLY`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
