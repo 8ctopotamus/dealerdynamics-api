@@ -27,4 +27,6 @@ Use Postman or the following CURL command:
     }
 }
 ```
-
+<!-- 
+Auth?
+https://gist.github.com/rchrd2/c94eb4701da57ce9a0ad4d2b00794131 -->
