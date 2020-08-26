@@ -5,7 +5,7 @@ $dbUsername = 'root';
 $dbPassword = '';
 $dbName = 'DDAPI';
 
-include '../secrets.php';
+include 'secrets.php';
 
 // production
 // $dbHost = 'localhost';
