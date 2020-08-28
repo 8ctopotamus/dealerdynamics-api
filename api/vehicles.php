@@ -8,8 +8,8 @@ $dbName = 'DDAPI';
 include 'secrets.php';
 
 // production
-// $dbHost = 'localhost';
-// $dbUsername = 'root';
+// $dbHost = 'localhost:3307';
+// $dbUsername = '???';
 // $dbPassword = '???';
 // $dbName = 'DDAPI';
 

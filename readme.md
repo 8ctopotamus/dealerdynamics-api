@@ -1,5 +1,8 @@
 ## Calling the Endpoint
 
+## Secrets secrets are no fun.
+`$secrets = array ("YOUR_USERNAME" => "YOUR_STRONG_PASSWORD");`
+
 ### Testing Locally
 Use Postman or the following CURL command:
 
