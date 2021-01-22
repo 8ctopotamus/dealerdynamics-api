@@ -60,7 +60,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     return "null";
   };
 
-
   $insertQuery = 'INSERT INTO DDAPI_CARBLY (
     CARBLY_UUID,
     CARBLY_ROOFTOP_UUID,
