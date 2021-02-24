@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sockets`
+-- Table structure for table `DDAPI_DS_DEAL`
 --
 
-CREATE TABLE `sockets` (
+CREATE TABLE `DDAPI_DS_DEAL` (
   `id` int(11) NOT NULL,
   `Buyer_Address1` varchar(100) DEFAULT NULL,
   `Buyer_Address2` varchar(100) DEFAULT NULL,
@@ -155,9 +155,9 @@ CREATE TABLE `sockets` (
 --
 
 --
--- Indexes for table `sockets`
+-- Indexes for table `DDAPI_DS_DEAL`
 --
-ALTER TABLE `sockets`
+ALTER TABLE `DDAPI_DS_DEAL`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -165,9 +165,9 @@ ALTER TABLE `sockets`
 --
 
 --
--- AUTO_INCREMENT for table `sockets`
+-- AUTO_INCREMENT for table `DDAPI_DS_DEAL`
 --
-ALTER TABLE `sockets`
+ALTER TABLE `DDAPI_DS_DEAL`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 

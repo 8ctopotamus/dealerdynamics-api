@@ -1,15 +1,15 @@
 <?php
 // production
-// $dbHost = 'localhost:3307';
-// $dbUsername = 'ics';
-// $dbPassword = 'U]p5aSA!11';
-// $dbName = 'DDAPI';
+$dbHost = 'localhost:3307';
+$dbUsername = 'ics';
+$dbPassword = 'U]p5aSA!11';
+$dbName = 'DDAPI';
 
 // localhost
-$dbHost = 'localhost';
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'ddapi';
+// $dbHost = 'localhost';
+// $dbUsername = 'root';
+// $dbPassword = '';
+// $dbName = 'ddapi';
 
 $conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
@@ -21,8 +21,6 @@ if ($conn->connect_error) {
 function isEmptyObj( $obj ) {
   return count( (array) $obj ) === 0;
 }
-
-$columns = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $postData = file_get_contents('php://input');
@@ -63,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $cols = rtrim($cols, ', ');
   $vals = rtrim($vals, ', ');
 
-  $sql = 'INSERT INTO sockets (' . $cols . ') VALUES (' . $vals . ');';
+  $sql = 'INSERT INTO DDAPI_DS_DEAL (' . $cols . ') VALUES (' . $vals . ');';
   $result = $conn->query($sql);
 
   if ($result) {
