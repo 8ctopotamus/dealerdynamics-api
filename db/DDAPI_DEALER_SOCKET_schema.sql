@@ -1,123 +1,176 @@
-CREATE TABLE sockets (
-  id INT NOT NULL AUTO_INCREMENT,
-  Buyer_Address1 VARCHAR(100) NULL, 
-  Buyer_Address2 VARCHAR(100) NULL, 
-  Buyer_Birthday VARCHAR(100) NULL, 
-  Buyer_CellPhone VARCHAR(100) NULL, 
-  Buyer_City VARCHAR(100) NULL, 
-  Buyer_ContactType VARCHAR(100) NULL, 
-  Buyer_ContactSubType VARCHAR(100) NULL, 
-  Buyer_CompanyName VARCHAR(100) NULL, 
-  Buyer_CountryCode VARCHAR(100) NULL, 
-  Buyer_DmsID VARCHAR(100) NULL,
-  Buyer_DriversLicense VARCHAR(100) NULL, 
-  Buyer_Email1 VARCHAR(100) NULL, 
-  Buyer_EntityType VARCHAR(100) NULL,
-  Buyer_FirstName VARCHAR(100) NULL, 
-  Buyer_HomePhone VARCHAR(100) NULL, 
-  Buyer_LastName VARCHAR(100) NULL, 
-  Buyer_MiddleName VARCHAR(100) NULL, 
-  Buyer_OptInEmail VARCHAR(100) NULL, 
-  Buyer_OptInPhone VARCHAR(100) NULL, 
-  Buyer_OptInPrint VARCHAR(100) NULL, 
-  Buyer_OptInText VARCHAR(100) NULL, 
-  Buyer_State VARCHAR(100) NULL, 
-  Buyer_StatusType VARCHAR(100) NULL,
-  Buyer_WorkPhone VARCHAR(100) NULL, 
-  Buyer_Zip VARCHAR(100) NULL, 
-  Buyer_SSN VARCHAR(100) NULL, 
-  CoBuyer_Address1 VARCHAR(100) NULL, 
-  CoBuyer_Address2 VARCHAR(100) NULL, 
-  CoBuyer_Birthday VARCHAR(100) NULL, 
-  CoBuyer_CellPhone VARCHAR(100) NULL, 
-  CoBuyer_City VARCHAR(100) NULL, 
-  CoBuyer_ContactType VARCHAR(100) NULL, 
-  CoBuyer_ContactSubType VARCHAR(100) NULL, 
-  CoBuyer_CompanyName VARCHAR(100) NULL, 
-  CoBuyer_CountryCode VARCHAR(100) NULL, 
-  CoBuyer_DriversLicense VARCHAR(100) NULL, 
-  CoBuyer_Email1 VARCHAR(100) NULL, 
-  CoBuyer_EntityType VARCHAR(100) NULL, 
-  CoBuyer_FirstName VARCHAR(100) NULL, 
-  CoBuyer_HomePhone VARCHAR(100) NULL, 
-  CoBuyer_LastName VARCHAR(100) NULL, 
-  CoBuyer_MiddleName VARCHAR(100) NULL, 
-  CoBuyer_OptInEmail VARCHAR(100) NULL, 
-  CoBuyer_OptInPhone VARCHAR(100) NULL, 
-  CoBuyer_OptInPrint VARCHAR(100) NULL, 
-  CoBuyer_OptInText VARCHAR(100) NULL, 
-  CoBuyer_State VARCHAR(100) NULL, 
-  CoBuyer_StatusType VARCHAR(100) NULL, 
-  CoBuyer_WorkPhone VARCHAR(100) NULL, 
-  CoBuyer_Zip VARCHAR(100) NULL, 
-  CoBuyer_SSN VARCHAR(100) NULL,
-  IntegrationMapping_DMSDealer VARCHAR(100) NULL, 
-  IntegrationMapping_DMSStore VARCHAR(100) NULL,
-  IntegrationMapping_DMSBranch VARCHAR(100) NULL, 
-  IntegrationMapping_DSiSiteId VARCHAR(100) NULL,
-  IntegrationMapping_DSiAddressId VARCHAR(100) NULL, 
-  IntegrationMapping_DSiEntityId VARCHAR(100) NULL,
-  IntegrationMapping_DSiEventId VARCHAR(100) NULL, 
-  IntegrationMapping_DSiActivityId VARCHAR(100) NULL,
-  IntegrationMapping_DSiVehicleId VARCHAR(100) NULL, 
-  IntegrationMapping_DSiQuoteId VARCHAR(100) NULL,
-  IntegrationMapping_DSiInventory VARCHAR(100) NULL, 
-  IntegrationMapping_DMSIPAddress VARCHAR(100) NULL,
-  IntegrationMapping_DMSName VARCHAR(100) NULL, 
-  IntegrationMapping_DMSVersion VARCHAR(100) NULL,
-  IntegrationMapping_DMSUsername VARCHAR(100) NULL, 
-  IntegrationMapping_DMSPassword VARCHAR(100) NULL, 
-  TradeVehicleVo_1_Make VARCHAR(100) NULL, 
-  TradeVehicleVo_1_Model VARCHAR(100) NULL, 
-  TradeVehicleVo_1_Year VARCHAR(100) NULL, 
-  TradeVehicleVo_1_VIN VARCHAR(100) NULL, 
-  TradeVehicleVo_1_Odometer VARCHAR(100) NULL, 
-  TradeVehicleVo_1_ExteriorColor VARCHAR(100) NULL,
-  TradeVehicleVo_1_MSRP VARCHAR(100) NULL, 
-  TradeVehicleVo_1_VehicleType VARCHAR(100) NULL, 
-  TradeVehicleVo_1_ACV VARCHAR(100) NULL, 
-  TradeVehicleVo_1_Allowance VARCHAR(100) NULL, 
-  TradeVehicleVo_1_LenderType VARCHAR(100) NULL, 
-  TradeVehicleVo_1_Payoff VARCHAR(100) NULL, 
-  TradeVehicleVo_2_Make VARCHAR(100) NULL, 
-  TradeVehicleVo_2_Model VARCHAR(100) NULL, 
-  TradeVehicleVo_2_Year VARCHAR(100) NULL, 
-  TradeVehicleVo_2_VIN VARCHAR(100) NULL, 
-  TradeVehicleVo_2_Odometer VARCHAR(100) NULL, 
-  TradeVehicleVo_2_ExteriorColor VARCHAR(100) NULL,
-  TradeVehicleVo_2_MSRP VARCHAR(100) NULL, 
-  TradeVehicleVo_2_VehicleType VARCHAR(100) NULL, 
-  TradeVehicleVo_2_ACV VARCHAR(100) NULL, 
-  TradeVehicleVo_2_Allowance VARCHAR(100) NULL, 
-  TradeVehicleVo_2_LenderType VARCHAR(100) NULL, 
-  TradeVehicleVo_2_Payoff VARCHAR(100) NULL, 
-  TradeVehicleVo_3_Make VARCHAR(100) NULL, 
-  TradeVehicleVo_3_Model VARCHAR(100) NULL, 
-  TradeVehicleVo_3_Year VARCHAR(100) NULL, 
-  TradeVehicleVo_3_VIN VARCHAR(100) NULL, 
-  TradeVehicleVo_3_Odometer VARCHAR(100) NULL, 
-  TradeVehicleVo_3_ExteriorColor VARCHAR(100) NULL,
-  TradeVehicleVo_3_MSRP VARCHAR(100) NULL, 
-  TradeVehicleVo_3_VehicleType VARCHAR(100) NULL, 
-  TradeVehicleVo_3_ACV VARCHAR(100) NULL, 
-  TradeVehicleVo_3_Allowance VARCHAR(100) NULL, 
-  TradeVehicleVo_3_LenderType VARCHAR(100) NULL, 
-  TradeVehicleVo_3_Payoff VARCHAR(100) NULL, 
-  Vehicle_Make VARCHAR(100) NULL, 
-  Vehicle_Model VARCHAR(100) NULL, 
-  Vehicle_Year VARCHAR(100) NULL,
-  Vehicle_VIN VARCHAR(100) NULL, 
-  Vehicle_Odometer VARCHAR(100) NULL, 
-  Vehicle_StockNumber VARCHAR(100) NULL, 
-  Vehicle_MSRP VARCHAR(100) NULL, 
-  Vehicle_VehicleType VARCHAR(100) NULL, 
-  Vehicle_CertifiedNumber VARCHAR(100) NULL, 
-  Vehicle_Price VARCHAR(100) NULL, 
-  CashDown VARCHAR(100) NULL, 
-  DealNumber VARCHAR(100) NULL, 
-  DealType VARCHAR(100) NULL, 
-  LenderDmsID VARCHAR(100) NULL, 
-  SalesPerson1DmsID VARCHAR(100) NULL, 
-  SalesPerson2DmsID VARCHAR(100) NULL,
-  PRIMARY KEY(id)
-);
+-- phpMyAdmin SQL Dump
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 19, 2021 at 04:23 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.5
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ddapi`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sockets`
+--
+
+CREATE TABLE `sockets` (
+  `id` int(11) NOT NULL,
+  `Buyer_Address1` varchar(100) DEFAULT NULL,
+  `Buyer_Address2` varchar(100) DEFAULT NULL,
+  `Buyer_Birthday` varchar(100) DEFAULT NULL,
+  `Buyer_CellPhone` varchar(100) DEFAULT NULL,
+  `Buyer_City` varchar(100) DEFAULT NULL,
+  `Buyer_ContactType` varchar(100) DEFAULT NULL,
+  `Buyer_ContactSubType` varchar(100) DEFAULT NULL,
+  `Buyer_CompanyName` varchar(100) DEFAULT NULL,
+  `Buyer_CountryCode` varchar(100) DEFAULT NULL,
+  `Buyer_DmsID` varchar(100) DEFAULT NULL,
+  `Buyer_DriversLicense` varchar(100) DEFAULT NULL,
+  `Buyer_Email1` varchar(100) DEFAULT NULL,
+  `Buyer_EntityType` varchar(100) DEFAULT NULL,
+  `Buyer_FirstName` varchar(100) DEFAULT NULL,
+  `Buyer_HomePhone` varchar(100) DEFAULT NULL,
+  `Buyer_LastName` varchar(100) DEFAULT NULL,
+  `Buyer_MiddleName` varchar(100) DEFAULT NULL,
+  `Buyer_OptInEmail` varchar(100) DEFAULT NULL,
+  `Buyer_OptInPhone` varchar(100) DEFAULT NULL,
+  `Buyer_OptInPrint` varchar(100) DEFAULT NULL,
+  `Buyer_OptInText` varchar(100) DEFAULT NULL,
+  `Buyer_State` varchar(100) DEFAULT NULL,
+  `Buyer_StatusType` varchar(100) DEFAULT NULL,
+  `Buyer_WorkPhone` varchar(100) DEFAULT NULL,
+  `Buyer_Zip` varchar(100) DEFAULT NULL,
+  `Buyer_SSN` varchar(100) DEFAULT NULL,
+  `CoBuyer_Address1` varchar(100) DEFAULT NULL,
+  `CoBuyer_Address2` varchar(100) DEFAULT NULL,
+  `CoBuyer_Birthday` varchar(100) DEFAULT NULL,
+  `CoBuyer_CellPhone` varchar(100) DEFAULT NULL,
+  `CoBuyer_City` varchar(100) DEFAULT NULL,
+  `CoBuyer_ContactType` varchar(100) DEFAULT NULL,
+  `CoBuyer_ContactSubType` varchar(100) DEFAULT NULL,
+  `CoBuyer_CompanyName` varchar(100) DEFAULT NULL,
+  `CoBuyer_CountryCode` varchar(100) DEFAULT NULL,
+  `CoBuyer_DriversLicense` varchar(100) DEFAULT NULL,
+  `CoBuyer_Email1` varchar(100) DEFAULT NULL,
+  `CoBuyer_EntityType` varchar(100) DEFAULT NULL,
+  `CoBuyer_FirstName` varchar(100) DEFAULT NULL,
+  `CoBuyer_HomePhone` varchar(100) DEFAULT NULL,
+  `CoBuyer_LastName` varchar(100) DEFAULT NULL,
+  `CoBuyer_MiddleName` varchar(100) DEFAULT NULL,
+  `CoBuyer_OptInEmail` varchar(100) DEFAULT NULL,
+  `CoBuyer_OptInPhone` varchar(100) DEFAULT NULL,
+  `CoBuyer_OptInPrint` varchar(100) DEFAULT NULL,
+  `CoBuyer_OptInText` varchar(100) DEFAULT NULL,
+  `CoBuyer_State` varchar(100) DEFAULT NULL,
+  `CoBuyer_StatusType` varchar(100) DEFAULT NULL,
+  `CoBuyer_WorkPhone` varchar(100) DEFAULT NULL,
+  `CoBuyer_Zip` varchar(100) DEFAULT NULL,
+  `CoBuyer_SSN` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DMSDealer` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DMSStore` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DMSBranch` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DSiSiteId` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DSiAddressId` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DSiEntityId` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DSiEventId` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DSiActivityId` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DSiVehicleId` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DSiQuoteId` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DSiInventory` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DMSIPAddress` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DMSName` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DMSVersion` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DMSUsername` varchar(100) DEFAULT NULL,
+  `IntegrationMapping_DMSPassword` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_Make` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_Model` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_Year` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_VIN` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_Odometer` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_ExteriorColor` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_MSRP` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_VehicleType` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_ACV` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_Allowance` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_LenderType` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_1_Payoff` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_Make` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_Model` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_Year` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_VIN` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_Odometer` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_ExteriorColor` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_MSRP` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_VehicleType` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_ACV` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_Allowance` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_LenderType` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_2_Payoff` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_Make` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_Model` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_Year` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_VIN` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_Odometer` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_ExteriorColor` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_MSRP` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_VehicleType` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_ACV` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_Allowance` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_LenderType` varchar(100) DEFAULT NULL,
+  `TradeVehicleVo_3_Payoff` varchar(100) DEFAULT NULL,
+  `Vehicle_Make` varchar(100) DEFAULT NULL,
+  `Vehicle_Model` varchar(100) DEFAULT NULL,
+  `Vehicle_Year` varchar(100) DEFAULT NULL,
+  `Vehicle_VIN` varchar(100) DEFAULT NULL,
+  `Vehicle_Odometer` varchar(100) DEFAULT NULL,
+  `Vehicle_StockNumber` varchar(100) DEFAULT NULL,
+  `Vehicle_MSRP` varchar(100) DEFAULT NULL,
+  `Vehicle_VehicleType` varchar(100) DEFAULT NULL,
+  `Vehicle_CertifiedNumber` varchar(100) DEFAULT NULL,
+  `Vehicle_Price` varchar(100) DEFAULT NULL,
+  `CashDown` varchar(100) DEFAULT NULL,
+  `DealNumber` varchar(100) DEFAULT NULL,
+  `DealType` varchar(100) DEFAULT NULL,
+  `LenderDmsID` varchar(100) DEFAULT NULL,
+  `SalesPerson1DmsID` varchar(100) DEFAULT NULL,
+  `SalesPerson2DmsID` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `sockets`
+--
+ALTER TABLE `sockets`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `sockets`
+--
+ALTER TABLE `sockets`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
