@@ -1,7 +1,10 @@
 ## Vehicles Endpoint
 
-## Secrets secrets are no fun.
-`$secrets = array ("YOUR_USERNAME" => "YOUR_STRONG_PASSWORD");`
+### Secrets secrets are no fun.
+```php
+$secrets = array ("YOUR_USERNAME" => "YOUR_STRONG_PASSWORD");
+$dsSecrets = array ("YOUR_USERNAME" => "YOUR_STRONG_PASSWORD");
+```
 
 ### Testing Locally
 Use Postman or the following CURL command:
