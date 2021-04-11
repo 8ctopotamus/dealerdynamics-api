@@ -25,8 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
   if (empty($code) || empty($state)) {
     die('Missing code and/or state parameters');
   }
-  var_dump($code);
-  var_dump($state);
   $sql = 'INSERT INTO DDAPI_CARFAX_AUTH_CALLBACK (state, code) VALUES ("'.$state.'", "'.$code.'");';
   $result = $conn->query($sql);
   if ($result) {
